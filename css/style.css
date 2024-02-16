@@ -9,7 +9,9 @@ ul{
     margin: 0;
     padding: 0;
 }
-
+img{
+    max-width: 100%;
+}
 @font-face {
     font-family: "TTFirsNeue-Light";
     src: url("../fonts/TTFirsNeue-Light.woff") format("woff");
@@ -385,4 +387,103 @@ main{
     font-family: "TTFirsNeue-Regular";
     text-decoration: none;
     color: #202126;
+}
+.copyright{
+    color: #C1C1C1;
+    font-size: 16px;
+    padding: 20px 45px;
+    background: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+
+    font-family: "TTFirsNeue-Regular";
+
+}
+
+.footer__info{
+    padding: 20px 25px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: "TTFirsNeue-Regular";
+    font-style: italic;
+}
+
+.all_news{
+    font-style: italic;
+    font-size: 16px;
+    font-family: "TTFirsNeue-Regular";
+    color: #494949;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.interview .post__info{
+    gap: 10px;
+    align-items: flex-start;
+    border-radius: 50px;
+}
+
+.interview .post__image{
+    width: 54px;
+    height: 54px;
+}
+
+.interview .post__title{
+    font-family: "TTFirsNeue-Regular";
+    font-size: 18px;
+
+}
+
+.interview .post__text{
+    font-size: 16px;
+    font-family: "TTFirsNeue-Light";
+    font-style: italic;
+
+}
+
+.aside__right h2{
+    font-size: 24px;
+    font-family: "TTFirsNeue-Regular";
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.news__item{
+    background: #fff;
+    padding: 15px 15px 10px 15px;
+    border-radius: 15px;
+}
+
+.news__info{
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.news__image{
+    width: 54px;
+    height: 54px;
+}
+
+.news__title{
+    font-size: 18px;
+    font-family: "TTFirsNeue-Regular";
+}
+.news__desc{
+    font-family: "TTFirsNeue-Light";
+    font-size: 16px;
+    font-style: italic;
+}
+.news__action{
+    font-size: 14px;
+    color: #C1C1C1;
+    font-family: "TTFirsNeue-Light";
+    font-style: italic;
+}
+
+.news__feed{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
