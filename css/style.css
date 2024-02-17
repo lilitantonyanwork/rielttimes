@@ -5,6 +5,9 @@ body{
     color: #202126;
 
 }
+div, p, h1,h2,h3,h4,h5{
+    box-sizing: border-box;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -57,6 +60,12 @@ img{
     border-radius: 30px;
     box-sizing: border-box;
 }
+.status{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #DDDDDD;
+}
 .search__form{
     margin-top: 39px;
 }
@@ -67,7 +76,17 @@ img{
     box-sizing: border-box;
     border: none;
     box-shadow: none;
-    padding: 15px 20px;
+    padding: 15px 20px 15px 59px;
+    font-style: italic;
+    font-family: "TTFirsNeue-Regular";
+    font-size: 16px;
+}
+.search__icon{
+    background: url('../images/icons/Search.svg');
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 20px;
 }
 .menu{
     margin-top: 30px;
@@ -78,6 +97,8 @@ img{
 }
 .menu__item{
     padding: 15px 20px;
+    gap: 15px;
+    align-items: center;
 }
 .menu__link{
     text-decoration: none;
@@ -85,6 +106,9 @@ img{
     font-size: 18px;
     font-style: italic;
     font-family: "TTFirsNeue-Light";
+    gap: 15px;
+    align-items: center;
+    display: flex;
 }
 .menu__item:hover{
     cursor: pointer;
@@ -124,6 +148,11 @@ img{
     color: #03A66D;
     font-size: 15px;
     font-family: "TTFirsNeue-Medium";
+    display: flex;
+    gap: 10px;
+}
+.rate__up svg path{
+ fill: #03A66D;
 }
 
 .rate__value{
@@ -147,6 +176,11 @@ img{
     height: 50px;
     border-radius: 100%;
     border: 1px solid #DDDDDD;
+}
+
+.social__icon{
+    width: 100%;
+    height: 100%;
 }
 
 .aside__right{
@@ -323,9 +357,50 @@ main{
     font-family: "TTFirsNeue-Regular";
     width: 25%;
     text-align: center;
-
+    position: relative;
+    overflow: hidden;
+}
+.cities__item.active{
+    background: #202126;
+    color: #fff;
 }
 
+.kr:after{
+    content: '';
+    background: url('../images/krasnadar.png') no-repeat;
+    width: 84px;
+    height: 74px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.sch:after{
+    content: '';
+    background: url('../images/sochi.png') no-repeat;
+    width: 111px;
+    height: 86px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.ms:after{
+    content: '';
+    background: url('../images/moscow.png') no-repeat;
+    width: 73px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.sp:after{
+    content: '';
+    background: url('../images/sp.png') no-repeat;
+    width: 72px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 .cities__list {
     gap: 30px;
     list-style: none;
@@ -343,7 +418,69 @@ main{
 .real__estate .page__title{
     text-align: center;
 }
+.tr:after{
+    content: '';
+    background: url('../images/tr.png') no-repeat;
+    width: 72px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.oae:after{
+    content: '';
+    background: url('../images/oae.png') no-repeat;
+    width: 111px;
+    height: 69px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.tl:after{
+    content: '';
+    background: url('../images/tl.png') no-repeat;
+    width: 72px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.bali:after{
+    content: '';
+    background: url('../images/bali.png') no-repeat;
+    width: 72px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
+.cities__item-icon{
+    background: url("../images/icons/main.svg");
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 5px;
+}
+.marketing__list .tabs__item:first-child:after{
+    content: '';
+    background: url('../images/prie.png');
+    position: absolute;
+    width: 196px;
+    height: 139px;
+    right: 0;
+    bottom: 0;
+}
+.marketing__list .tabs__item:last-child:after{
+    content: '';
+    background: url('../images/estate.png');
+    position: absolute;
+    width: 196px;
+    height: 139px;
+    right: 0;
+    bottom: 0;
+}
 .marketing__tabs{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -358,12 +495,15 @@ main{
 
 .marketing__tabs .tabs__item{
     background: #F8F8F8;
-    padding: 40px;
+    padding: 57px 40px;
     box-sizing: border-box;
     width: 50%;
     font-family: "TTFirsNeue-Regular";
     font-style: normal;
     height: auto;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
 }
 .marketing__tabs .tabs__item.active{
     background: #202126;
@@ -486,4 +626,340 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.comments__icon{
+    position: relative;
+    padding-left: 22px;
+}
+.comments__icon:before{
+    content: '';
+    background: url("../images/icons/comment.svg");
+    background-size: 17px;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.seen__icon{
+    position: relative;
+    padding-left: 22px;
+}
+.seen__icon:before{
+    content: '';
+    background: url("../images/icons/eye.svg");
+    background-size: 16px;
+
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.features__list .seen__icon:before{
+    background: url("../images/icons/eye_white.svg");
+
+}
+.features__list .comments__icon:before{
+    background: url("../images/icons/comment_white.svg");
+}
+
+.breadcrumbs__list{
+    gap: 36px;
+}
+
+.breadcrumbs__item a, .breadcrumbs__item{
+    font-size: 16px;
+    font-style: italic;
+    font-family: "TTFirsNeue-Light";
+    text-decoration: none;
+    color: #494949;
+    position: relative;
+}
+.breadcrumbs__item a:after{
+    content: '/';
+    position: absolute;
+    right: -19px;
+
+
+}
+
+.page__content, .catalog__page{
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    margin-bottom: 60px;
+}
+.catalog__page{
+    padding: 20px;
+}
+
+.page__tag{
+    font-size: 16px;
+    color: #202126;
+    font-style: italic;
+    font-family: "TTFirsNeue-Regular";
+    padding: 8px    15px;
+    border-radius: 50px;
+    border: 1px solid #C1C1C1;
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+    margin-left: 69px;
+}
+
+.page__content-title{
+    font-size: 44px;
+    font-family: TTFirsNeue-Medium;
+    line-height: 56px;
+    padding-left: 69px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+.catalog__title{
+    font-size: 32px;
+    font-family: TTFirsNeue-Medium;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.page__content-info{
+    font-size: 22px;
+    font-family: TTFirsNeue-Regular;
+    line-height: 28px;
+    padding-left: 69px;
+    margin-bottom: 25px;
+}
+.page__content-action{
+    padding-left: 69px;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+.page__content-author{
+    gap: 11px;
+    font-style: italic;
+    font-family: TTFirsNeue-Medium;
+    font-size: 16px;
+    margin-right: 35px;
+}
+.page__content-author span{
+    font-family: TTFirsNeue-Regular;
+
+}
+.page__content-date{
+    font-style: italic;
+    font-family: TTFirsNeue-Regular;
+    margin-right: 35px;
+}
+.page__content-comment{
+    font-style: italic;
+    font-family: TTFirsNeue-Regular;
+    color: #C1C1C1;
+    margin-right: 35px;
+
+}
+.page__content-seen{
+    font-style: italic;
+    font-family: TTFirsNeue-Regular;
+    color: #C1C1C1;
+
+}
+
+.page__content-desc{
+    padding: 47px 69px;
+    font-family: TTFirsNeue-Regular;
+    font-size: 20px;
+}
+.page__content h3{
+    margin-top: 80px;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-family: TTFirsNeue-Medium;
+
+}
+.page__content h4{
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-family: TTFirsNeue-Medium;
+
+}
+.page__content h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: TTFirsNeue-Medium;
+
+}
+
+u{
+    font-family: TTFirsNeue-Medium;
+}
+
+.selected__block{
+    background: #EEEEEE;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.page__content-image{
+    margin-top: 80px;
+}
+.page__content-desc h2{
+    font-size: 28px;
+    font-family: TTFirsNeue-Medium;
+}
+.page__content-link {
+    margin-top: 80px;
+}
+.page__like{
+    width: 100%;
+    background: #F8F8F8;
+    border-radius: 15px;
+    color: #C1C1C1;
+    font-size: 20px;
+    font-style: italic;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: TTFirsNeue-Regular;
+    margin-bottom: 60px;
+}
+
+.page__comments{
+    width: 100%;
+    background: #F8F8F8;
+    border-radius: 15px;
+    color: #C1C1C1;
+    font-size: 20px;
+    font-style: italic;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: TTFirsNeue-Regular;
+    margin-top: 60px;
+}
+.hashtags{
+    list-style:none;
+    gap: 25px;
+    font-style: italic;
+    font-size: 16px;
+    font-family: TTFirsNeue-Regular;
+    margin-bottom: 60px;
+
+}
+
+.hashtags span{
+    color: #C1C1C1;
+}
+
+.follow__list{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.follow__item{
+    flex-direction: column;
+    padding: 0 40px;
+    height: 137px;
+    font-style: italic;
+    gap: 10px;
+    max-width: 242px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    border-radius: 15px;
+}
+.share__list{
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.share__item{
+    width: 64px;
+    height: 64px;
+    background: #F8F8F8;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__actions{
+    justify-content: space-between;
+}
+.share{
+    padding-left: 30px;
+}
+
+.catalog__list .post__item{
+    max-width: 100%;
+    flex-direction: row;
+    background: transparent;
+    border: 1px solid #DDDDDD;
+
+}
+.catalog__list .post__image{
+    max-width: 268px;
+}
+.catalog__list .post__title{
+   font-size: 20px;
+    font-family: TTFirsNeue-Regular;
+    margin-bottom: 5px;
+}
+.catalog__list .post__desc{
+    font-size: 16px;
+    font-family: TTFirsNeue-Regular;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.catalog__list .post__date{
+    font-size: 14px;
+}
+.pagination__list{
+    list-style: none;
+    gap: 10px;
+    margin-top: 25px;
+}
+.pagination__list a{
+    text-decoration: none;
+    color: #C1C1C1;
+    font-size: 18px;
+    font-family: TTFirsNeue-Regular;
+    display: flex;
+    align-items: center;
+
+}
+.pagination__list{
+    font-size: 18px;
+    font-family: TTFirsNeue-Regular;
+    color: #202126;
+    display: flex;
+    align-items: center;
+}
+.pagination__prev{
+    transform: rotate(180deg);
+
+    display: flex;
+    align-items: center;
+}
+
+.pagination__prev.disabled{
+    opacity: 0.2;
+}
+.load__more {
+    margin-top: 25px;
+
+}
+
+.load__more a{
+    font-size:18px;
+    color: #202126;
+    font-family: TTFirsNeue-Regular;
+    font-style: italic;
 }
