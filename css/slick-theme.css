@@ -245,3 +245,13 @@
 .afisha__list .slick-dots li button{
     background: #c1c1c1;
 }
+
+.subject__list .slick-dots .slick-active button{
+    background: #202126;
+}
+.subject__list .slick-dots li button{
+    background: #c1c1c1;
+}
+.slick-dots li button:before{
+    display: none;
+}

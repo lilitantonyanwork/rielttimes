@@ -1,0 +1,212 @@
+@media screen and (max-width: 1600px){
+
+}
+@media screen and (max-width: 1400px){
+
+}
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 1100px){
+
+}
+@media screen and (max-width: 1024px){
+    .page{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .logo{
+        border-bottom: 1px solid #ddd;
+        padding: 15px;
+        align-items: center;
+    }
+    .status{
+        display: none;
+    }
+    .aside__left{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .search__form{
+        display: none;
+    }
+    .menu__block{
+        display: none;
+    }
+    .mobile__menu{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../images/icons/menu.svg');
+    }
+    .mobile__search{
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../images/icons/Search.svg');
+    }
+    .mobile__action{
+        gap: 20px;
+    }
+    main{
+        width: 100%;
+    }
+    .aside__right{
+        width: 100%;
+    }
+    .features{
+        border-radius: 0;
+    }
+    features h2{
+        text-align: center;
+    }
+    .page__title{
+        text-align: center;
+    }
+    .mortgage{
+        border-radius: 0;
+        background: transparent;
+        border-top: 1px solid #ddd;
+    }
+    .marketing{
+        border-radius: 0;
+        background: transparent;
+        border-top: 1px solid #ddd;
+    }
+    .cities{
+        border-radius: 0;
+    }
+    .interview{
+        border-radius: 0;
+        background: transparent;
+        border-top: 1px solid #ddd;
+    }
+    .prices{
+        border-radius: 0;
+        background: transparent;
+        border-top: 1px solid #ddd;
+    }
+    .real__estate{
+        border-radius: 0;
+    }
+    .marketing__tabs{
+        border-radius: 0;
+    }
+
+    .subjects{
+        border-radius: 0;
+        background: transparent;
+        border-top: 1px solid #ddd;
+    }
+    .footer__menu{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .footer__menu-list{
+        width: 100%;
+        border-radius: 0;
+    }
+    .copyright{
+        width: 100%;
+        border-radius: 0;
+    }
+    .footer__info{
+        border-radius: 0;
+    }
+}
+@media screen and (max-width: 990px){
+    .post__item{
+        width: 49%;
+    }
+    .marketing .post__item, .mortgage .post__item, .interview .post__item, .prices .post__item, .subjects .post__item{
+        background: #fff;
+    }
+    .cities__list{
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .cities__item{
+        width: 49%;
+        font-size: 14px;
+    }
+    .cities{
+        padding: 40px 15px;
+    }
+    .kr:after, .sch:after, .ms:after{
+        right: -15px;
+        bottom: -15px;
+    }
+    .sp:after{
+        right: -10px;
+        bottom: -10px;
+    }
+    .cities .page__title{
+        font-size: 24px;
+    }
+    .real__estate{
+        padding: 40px 15px;
+    }
+    .cities__item-icon{
+        display: none;
+    }
+    .cities__item{
+        padding: 30px 0;
+    }
+    .tr:after{
+        right: -15px;
+    }
+    .tl:after{
+        right: -10px;
+    }
+    .real__estate .page__title{
+        font-size: 24px;
+    }
+    .page__title{
+        font-size: 24px;
+    }
+    .marketing__tabs .tabs__item{
+        width: 100%;
+    }
+    .marketing__list{
+        flex-wrap: wrap;
+    }
+    .marketing__tabs .tabs__item{
+        font-size: 13px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: #202126;
+        color: #fff;
+    }
+    .marketing__list .tabs__item:first-child:after{
+        background-size: 51%;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
+    .marketing__list .tabs__item:last-child:after{
+        background-size: 51%;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
+
+    .tabs__item{
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .post__item{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 480px){
+
+}

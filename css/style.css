@@ -47,14 +47,16 @@ img{
 .pa{
     position: absolute;
 }
+.dn{
+    display: none;
+}
 .page{
     padding: 22px 30px;
     align-items: self-start;
     gap: 13px;
 }
 .aside__left{
-    max-width: 320px;
-    width: 100%;
+    width: 20%;
     padding: 21px 13px 30px;
     border: 1px solid #DDDDDD;
     border-radius: 30px;
@@ -184,8 +186,7 @@ img{
 }
 
 .aside__right{
-    max-width: 404px;
-    width: 100%;
+    width: 22%;
     padding: 20px 15px;
     border: 1px solid #DDDDDD;
     border-radius: 30px;
@@ -193,8 +194,7 @@ img{
 }
 
 main{
-    max-width: 1108px;
-    width: 100%;
+    width: 60%;
 }
 
 .tabs__list{
@@ -263,8 +263,7 @@ main{
     background: rgba(0,0,0,0.25);
     align-items: flex-start;
     justify-content: left;
-    max-width: 342px;
-   width: 100%;
+    width: 32%;
     box-sizing: border-box;
 }
 .post__tag{
