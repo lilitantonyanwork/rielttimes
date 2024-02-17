@@ -998,3 +998,57 @@ u{
 .post_dl .post__location{
     color: #202126;
 }
+.page__content-timing{
+    padding-left: 69px;
+    padding-right: 69px;
+}
+.page__content-timing p{
+    font-family: TTFirsNeue-Regular;
+    font-size: 16px;
+    font-style: italic;
+}
+.page__location{
+    font-family: TTFirsNeue-Regular;
+    font-style: italic;
+    font-size: 18px;
+}
+.afisha__inner .page__content-action{
+    margin-bottom: 25px;
+}
+
+.actors{
+    list-style: none;
+
+}
+
+.actors__item{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-family: TTFirsNeue-Regular;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pricing__item{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pricing__item span:last-child{
+    font-family: TTFirsNeue-Medium;
+}
+
+hr{
+    width: 75%;
+    background: #DDDDDD;
+}
+
+.more__item input{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.more__info{
+    margin-bottom: 60px;
+}

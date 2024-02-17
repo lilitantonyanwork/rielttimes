@@ -239,3 +239,9 @@
 {
     background: #fff;
 }
+.afisha__list .slick-dots .slick-active button{
+    background: #202126;
+}
+.afisha__list .slick-dots li button{
+    background: #c1c1c1;
+}
