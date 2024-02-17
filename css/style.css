@@ -963,3 +963,38 @@ u{
     font-family: TTFirsNeue-Regular;
     font-style: italic;
 }
+
+.afisha__tag{
+    margin-left: 0;
+    margin-bottom: 15px;
+    background: #F8F8F8;
+    font-family: TTFirsNeue-Medium;
+
+}
+
+.afisha__page .posts{
+    margin-bottom: 15px;
+}
+.post_dl{
+    gap: 15px;
+}
+.post_dl .post__date{
+    color: #202126;
+}
+.calendar__icon{
+    background: url("../images/icons/calendar.svg");
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.location__icon{
+    background: url("../images/icons/location.svg");
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.post_dl .post__location{
+    color: #202126;
+}
