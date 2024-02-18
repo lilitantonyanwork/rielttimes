@@ -897,7 +897,7 @@ u{
 }
 
 .catalog__list .post__item{
-    max-width: 100%;
+    width: 100%;
     flex-direction: row;
     background: transparent;
     border: 1px solid #DDDDDD;

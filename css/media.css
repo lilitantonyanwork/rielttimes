@@ -196,7 +196,35 @@
     .tabs__item{
         font-size: 13px;
     }
+    .features h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    .post__info{
+        font-size: 14px;
+    }
+    .post__action{
+        font-size: 12px;
+    }
+    .post__tag{
+        font-size: 12px;
+    }
 
+    .more__news{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    .more__news a{
+        font-style: italic;
+        color: #fff;
+        font-family: TTFirsNeue-Regular;
+    }
+    .features__list:not(:first-child){
+        display: none;
+    }
 }
 @media screen and (max-width: 768px){
     .post__item{
